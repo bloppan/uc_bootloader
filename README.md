@@ -8,7 +8,7 @@ The code is very simple, so there are some improvements that you should do if yo
 
 The figure below shows how the program memory (flash) is organized in the MCU.
 
-![memory](https://imgur.com/z43853J)
+![memory](https://imgur.com/z43853J.jpg)
 
 The bootloader is alocated at first page of memory program (0x08000000). The execution begins at entry point (reset vector). During bootloader initialization, the state of BOOT_FLAG is checked in order to know if it have to jump to application code or wait an update. The possible values of BOOT_FLAG are:
 - BOOT_FLAG = 0: The application code is valid and is alocated at 0x0800E000. The bootloader code will perform a jump to application code.
