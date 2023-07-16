@@ -2,7 +2,7 @@
 A bootloader allows update the code on a device when it is in the field. The purposal of this example is show how works a bootloader which resides in the code space (flash memory) and can reprogram the rest of the memory. This kind of bootloader is appropiate when you have plenty of code space.
 The code is very simple, so there are some improvements that you should do if you want to use this bootloader for production purposes:
 - Create an abstraction layer between the HAL and drivers will allow you port the code to others hardware arquitectures.
-- Add your communication method. In this example, the communication method is the bus CAN, which is frequently used by vehicle electronic control units (ECUs). 
+- Add your communication method. In this example, the communication method is the CAN bus, which is frequently used by vehicle electronic control units (ECUs). 
 - Add an algorithm that be able to encrypt and decrypt the communication between the target and host.
 - Unit tests are always welcome.
 
