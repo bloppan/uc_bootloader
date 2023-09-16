@@ -1,4 +1,4 @@
-# Bootloader example for STM32F1 devices
+# Bootloader for STM32F1 microcontrollers
 A bootloader allows update the code on a device when it is in the field. The purposal of this example is show how works a bootloader which resides in the code space (flash memory) and can reprogram the rest of the memory. This kind of bootloader is appropiate when you have plenty of code space.
 The code is very simple, so there are some improvements that you should do if you want to use this bootloader for production purposes:
 - Create an abstraction layer between the HAL and drivers will allow you port the code to others hardware arquitectures.
